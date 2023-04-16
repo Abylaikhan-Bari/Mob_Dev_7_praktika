@@ -93,7 +93,7 @@ class ControlState extends State<Control> {
         });
       } else {
         setState(() {
-          _message = 'No message to display';
+          _message = 'Körsetıletın habar joq';
         });
       }
     });
@@ -103,7 +103,7 @@ class ControlState extends State<Control> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Firebase Example"),
+          title: Text("Jetınşı praktika"),
           centerTitle: true,
           backgroundColor: Colors.blueGrey[900],
         ),
@@ -117,7 +117,7 @@ class ControlState extends State<Control> {
         controller: _textController,
         style: Theme.of(context).textTheme.bodyText2,
         decoration: InputDecoration(
-        hintText: "Enter a message",
+        hintText: "Habardy engızıñız",
         filled: true,
         fillColor: Colors.blueGrey[100], // change to desired color
         border: OutlineInputBorder(
@@ -132,7 +132,7 @@ class ControlState extends State<Control> {
           databaseReference.child('message').set(_textController.text);
           _textController.clear();
         },
-        child: Text('Send'),
+        child: Text('Jıberu'),
       ),
       SizedBox(height: 24.0),
       Card(
