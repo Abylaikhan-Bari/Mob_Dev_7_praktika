@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.blueGrey[900],
-        backgroundColor: Colors.blueGrey[50],
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.blueGrey[900],
@@ -33,20 +32,20 @@ class MyApp extends StatelessWidget {
           ),
         ),
         textTheme: TextTheme(
-          headline6: TextStyle(
+          titleLarge: TextStyle(
             fontSize: 20.0,
             color: Colors.blueGrey[900],
             fontWeight: FontWeight.bold,
           ),
-          bodyText2: TextStyle(
+          bodyMedium: TextStyle(
             fontSize: 16.0,
             color: Colors.blueGrey[900],
           ),
-          button: TextStyle(
+          labelLarge: TextStyle(
             fontSize: 16.0,
             color: Colors.white,
           ),
-          subtitle1: TextStyle(
+          titleMedium: TextStyle(
             fontSize: 14.0,
             color: Colors.blueGrey[900],
           ),
@@ -115,7 +114,7 @@ class ControlState extends State<Control> {
         children: <Widget>[
         TextFormField(
         controller: _textController,
-        style: Theme.of(context).textTheme.bodyText2,
+        style: Theme.of(context).textTheme.bodyMedium,
         decoration: InputDecoration(
         hintText: "Habardy engızıñız",
         filled: true,
@@ -144,7 +143,7 @@ class ControlState extends State<Control> {
             padding: EdgeInsets.all(16.0),
             child: Text(
               _message,
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),
         ),
